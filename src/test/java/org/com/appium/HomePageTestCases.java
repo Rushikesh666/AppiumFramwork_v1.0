@@ -129,21 +129,21 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 
 	 
 	  
-	  
-	public void ValidateProductsPageToastText() throws InterruptedException   
+	  @Test(dataProvider = "getdata")
+	public void ValidateProductsPageToastText(HashMap<String,String> 	inputData) throws InterruptedException   
 
 	{
 
 			Thread.sleep(3000);
 		 
-		System.out.println("Validate_Products_Page_ToastText() running");
+ 
 		
-		OnHomePage.	SelectCountry("Andorra");
+		OnHomePage.	SelectCountry(inputData.get("Country"));
 	 
-		OnHomePage .	InsertName("Pooja");
+		OnHomePage .	InsertName(inputData.get("Name"));
 	 
 
-		OnHomePage.	SelectGender("male");
+		OnHomePage.	SelectGender(inputData.get("Gender"));
 			
  
 		ProductsPageElements Products_Page=	OnHomePage. Click_LetsShop_Button();
@@ -156,15 +156,15 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 		
 	}
 @BeforeMethod
- 	public void pretest() throws InterruptedException
+ 	public void loadSplashScreen() throws InterruptedException
 
  {
 		
 		Thread.sleep(3000);
-		 
+		System.out.println("Loading Splash Screen/Activity");
 			Activity activity = new Activity("com.androidsample.generalstore","com.androidsample.generalstore.SplashActivity");
 			driver .startActivity(activity);
-			System.out.println("pretest running");
+ 
 
  }
 	

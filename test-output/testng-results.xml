@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-07T16:36:59 IST" name="Default suite" finished-at="2023-04-07T16:38:02 IST" duration-ms="62974">
+  <suite started-at="2023-04-07T16:47:54 IST" name="Default suite" finished-at="2023-04-07T16:49:42 IST" duration-ms="107716">
     <groups>
     </groups>
-    <test started-at="2023-04-07T16:36:59 IST" name="Default test" finished-at="2023-04-07T16:38:02 IST" duration-ms="62974">
+    <test started-at="2023-04-07T16:47:54 IST" name="Default test" finished-at="2023-04-07T16:49:42 IST" duration-ms="107716">
       <class name="org.com.appium.HomePageTestCases">
-        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:36:59 IST" name="BasTestMethod" finished-at="2023-04-07T16:37:10 IST" duration-ms="10368" status="PASS">
+        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:47:54 IST" name="BasTestMethod" finished-at="2023-04-07T16:48:05 IST" duration-ms="10729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasTestMethod -->
-        <test-method is-config="true" signature="pretest()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:37:10 IST" name="pretest" finished-at="2023-04-07T16:37:14 IST" duration-ms="3696" status="PASS">
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:48:05 IST" name="loadSplashScreen" finished-at="2023-04-07T16:48:09 IST" duration-ms="3701" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pretest -->
-        <test-method signature="Validate_Homepage_ToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:37:14 IST" name="Validate_Homepage_ToastText" data-provider="getdata" finished-at="2023-04-07T16:37:48 IST" duration-ms="34601" status="PASS">
+        </test-method> <!-- loadSplashScreen -->
+        <test-method signature="ValidateProductsPageToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:48:09 IST" name="ValidateProductsPageToastText" data-provider="getdata" finished-at="2023-04-07T16:48:47 IST" duration-ms="37935" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,12 +25,42 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Homepage_ToastText -->
-        <test-method is-config="true" signature="pretest()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:37:48 IST" name="pretest" finished-at="2023-04-07T16:37:52 IST" duration-ms="3694" status="PASS">
+        </test-method> <!-- ValidateProductsPageToastText -->
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:48:47 IST" name="loadSplashScreen" finished-at="2023-04-07T16:48:50 IST" duration-ms="3674" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pretest -->
-        <test-method signature="Validate_Homepage_ToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:37:52 IST" name="Validate_Homepage_ToastText" data-provider="getdata" finished-at="2023-04-07T16:38:02 IST" duration-ms="10290" status="PASS">
+        </test-method> <!-- loadSplashScreen -->
+        <test-method signature="ValidateProductsPageToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:48:50 IST" name="ValidateProductsPageToastText" data-provider="getdata" finished-at="2023-04-07T16:49:04 IST" duration-ms="13726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Country=Argentina, Gender=female, Name=Pooja}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateProductsPageToastText -->
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:49:04 IST" name="loadSplashScreen" finished-at="2023-04-07T16:49:08 IST" duration-ms="3698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadSplashScreen -->
+        <test-method signature="Validate_Homepage_ToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:49:08 IST" name="Validate_Homepage_ToastText" data-provider="getdata" finished-at="2023-04-07T16:49:28 IST" duration-ms="20337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Country=Congo, Gender=Male, Name=Rushi}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Homepage_ToastText -->
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:49:28 IST" name="loadSplashScreen" finished-at="2023-04-07T16:49:32 IST" duration-ms="3657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadSplashScreen -->
+        <test-method signature="Validate_Homepage_ToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-07T16:49:32 IST" name="Validate_Homepage_ToastText" data-provider="getdata" finished-at="2023-04-07T16:49:42 IST" duration-ms="10057" status="PASS">
           <params>
             <param index="0">
               <value>
