@@ -170,7 +170,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 		Thread.sleep(8000);
  
 		 
-		navigateBack();
+ 
 		}
 	 
 	 
