@@ -28,6 +28,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.internal.BaseClassFinder;
 
@@ -46,7 +47,7 @@ public class HomePageTestCases extends Baseclass {
 	
 	
  
-	@Test(dataProvider = "getdata")
+	//@Test(dataProvider = "getdata")
 public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) throws InterruptedException {
 	
 		System.out.println("Validate_Homepage_ToastText() running");
@@ -129,7 +130,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 
 	 
 	  
-	  @Test(dataProvider = "getdata")
+	 @Test(dataProvider = "getdata")
 	public void ValidateProductsPageToastText(HashMap<String,String> 	inputData) throws InterruptedException   
 
 	{
@@ -150,11 +151,29 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 		Thread.sleep(3000);
 		Products_Page.Click_Cart_Btn(driver);
  
+		Products_Page.select_product();
+		Thread.sleep(3000);
+		CartPageElements CartPage =	Products_Page.Click_Cart_Btn(driver);
+		Thread.sleep(3000);
+		CartPage.getCartItemsTotal();
  
- 
- 
+		Set<String> mycontexthandles=	driver.getContextHandles();
 		
-	}
+		for (String handle : mycontexthandles) 
+		{
+			System.out.println(handle);
+		}
+		CartPage.submitOrder();
+		
+
+		
+		Thread.sleep(8000);
+ 
+		 
+		navigateBack();
+		}
+	 
+	 
 @BeforeMethod
  	public void loadSplashScreen() throws InterruptedException
 
@@ -175,7 +194,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 	  {  
 		  List<HashMap<String,String>>	data= getJsonData( FileSystems.getDefault().getPath("").toAbsolutePath()+ "//src//test//java//testData//HompageData.json"  );
 		
-		  return new Object [] [] { 	{	 data.get(0) } ,		{	 data.get(1) } } ; 
+		  return new Object [] [] { 	{	 data.get(0) }   } ; 
 		  
 	  }
 

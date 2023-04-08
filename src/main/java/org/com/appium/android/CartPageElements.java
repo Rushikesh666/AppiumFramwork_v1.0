@@ -79,7 +79,46 @@ public void LongPress_btnProceed(    int durationInSeconds )
 }
 
 
+public void submitOrder(      ) throws InterruptedException
+{ 
  
+ 
+	LongPress_btnProceed(   5);
+ 
+ 
+}
+
+//WEBVIEW_com.androidsample.generalstore
+ 
+ 
+public void SwitchToWebview(      ) throws InterruptedException
+{ 
+ 
+ 
+ driver.context("WEBVIEW_com.androidsample.generalstore");
+ 
+ 
+}
+public void SwitchToNativeView(      ) throws InterruptedException
+{ 
+ 
+ 
+ driver.context("NATIVE_APP");
+ 
+ 
+}
+
+
+public void NavigateBackFromWebview(    AndroidDriver driver  ) throws InterruptedException
+{ 
+ 
+	SwitchToNativeView();
+	navigateBack();
+	navigateBack();
+ 
+}
+
+
 
 
 

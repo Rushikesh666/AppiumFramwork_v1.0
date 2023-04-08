@@ -40,8 +40,10 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 	
 	option.setDeviceName("pixel2");
 	
-	option.setApp("C://Users//Rushikesh//eclipse-workspace//com.appium//src//main//java//res//General-Store.apk");
-	option.setChromedriverExecutable("C://Users//Rushikesh//Pictures//appiumws1//chromedriver.exe");
+	
+	
+	option.setApp(System.getProperty("user.dir") +"//src//main//java//res//General-Store.apk");
+	option.setChromedriverExecutable(System.getProperty("user.dir") +"//src//main//java//res//chromedriver.exe");
 	 driver= new AndroidDriver(url, option);
   OnHomePage= new HomePageElements(driver);
 	System.out.println("BasTestMethod() running");
