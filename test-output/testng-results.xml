@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-08T16:23:56 IST" name="Default suite" finished-at="2023-04-08T16:24:45 IST" duration-ms="49439">
+  <suite started-at="2023-04-08T16:30:17 IST" name="Default suite" finished-at="2023-04-08T16:31:05 IST" duration-ms="48410">
     <groups>
     </groups>
-    <test started-at="2023-04-08T16:23:56 IST" name="Default test" finished-at="2023-04-08T16:24:45 IST" duration-ms="49439">
+    <test started-at="2023-04-08T16:30:17 IST" name="Default test" finished-at="2023-04-08T16:31:05 IST" duration-ms="48410">
       <class name="org.com.appium.HomePageTestCases">
-        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:23:56 IST" name="BasTestMethod" finished-at="2023-04-08T16:24:07 IST" duration-ms="11441" status="PASS">
+        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:30:17 IST" name="BasTestMethod" finished-at="2023-04-08T16:30:27 IST" duration-ms="10379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasTestMethod -->
-        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:24:07 IST" name="loadSplashScreen" finished-at="2023-04-08T16:24:11 IST" duration-ms="3711" status="PASS">
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:30:28 IST" name="loadSplashScreen" finished-at="2023-04-08T16:30:31 IST" duration-ms="3697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadSplashScreen -->
-        <test-method signature="ValidateProductsPageToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:24:11 IST" name="ValidateProductsPageToastText" data-provider="getdata" finished-at="2023-04-08T16:24:45 IST" duration-ms="34073" status="PASS">
+        <test-method signature="ValidateProductsPageToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@6404f418]" started-at="2023-04-08T16:30:31 IST" name="ValidateProductsPageToastText" data-provider="getdata" finished-at="2023-04-08T16:31:05 IST" duration-ms="34103" status="PASS">
           <params>
             <param index="0">
               <value>

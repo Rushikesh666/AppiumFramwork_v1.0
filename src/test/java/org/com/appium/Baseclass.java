@@ -36,29 +36,29 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 
 	{
 	 
-	 Properties prop= new Properties();
-	 
- FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"//src//main//java//res//prop.properties");
-	 
-	 prop.load(fis);
-		
-	UiAutomator2Options option =new UiAutomator2Options();
+	 	Properties prop= new Properties();
+					 
+					 	FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"//src//main//java//res//prop.properties");
+					 
+					 	prop.load(fis);
+						
+						String IPADDRESS= prop.getProperty("ipAddress");
+				
+						String port= prop.getProperty("port");
+						//URL url = new URL( "http://127.0.0.1:4723" );
+						URL urlnew = new URL(IPADDRESS+":"+port);
+					 
+					 
+	 	UiAutomator2Options option =new UiAutomator2Options();
 	
  
-	String IPADDRESS= prop.getProperty("ipAddress");
 
-	String port= prop.getProperty("port");
-	
-	
 	
 	option.setDeviceName("pixel2");
+	 
+		option.setApp(System.getProperty("user.dir") +"//src//main//java//res//General-Store.apk");
 	
-	//URL url = new URL( "http://127.0.0.1:4723" );
-	URL urlnew = new URL(IPADDRESS+":"+port);
-	
-	option.setApp(System.getProperty("user.dir") +"//src//main//java//res//General-Store.apk");
-	
-	option.setChromedriverExecutable(System.getProperty("user.dir") +"//src//main//java//res//chromedriver.exe");
+		option.setChromedriverExecutable(System.getProperty("user.dir") +"//src//main//java//res//chromedriver.exe");
 	
 	 driver= new AndroidDriver(urlnew, option);
 	 
