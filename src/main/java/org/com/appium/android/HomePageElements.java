@@ -1,7 +1,13 @@
 package org.com.appium.android;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.com.appium.android.utils.AndroidActions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -110,8 +116,6 @@ public class HomePageElements extends AndroidActions   {
 	 driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='"+country_text+"']")).click();
 		 
 	 }
-
-
 
  
 

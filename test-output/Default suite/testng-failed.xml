@@ -5,8 +5,8 @@
     <classes>
       <class name="org.com.appium.HomePageTestCases">
         <methods>
-          <include name="ValidateProductsPageToastText"/>
           <include name="BasTestMethod"/>
+          <include name="Validate_Homepage_ToastText" invocation-numbers="0"/>
           <include name="loadSplashScreen"/>
         </methods>
       </class> <!-- org.com.appium.HomePageTestCases -->

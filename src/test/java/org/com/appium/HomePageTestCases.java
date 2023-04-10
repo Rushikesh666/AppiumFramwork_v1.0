@@ -1,5 +1,8 @@
 package org.com.appium;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
@@ -32,6 +35,9 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.internal.BaseClassFinder;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
@@ -43,26 +49,32 @@ import io.appium.java_client.android.StartsActivity;
 
 
 public class HomePageTestCases extends Baseclass {
+
 	
 	
+
 	
  
-	//@Test(dataProvider = "getdata")
-public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) throws InterruptedException {
+ @Test(dataProvider = "getdata")
+public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) throws InterruptedException, IOException {
 	
 		System.out.println("Validate_Homepage_ToastText() running");
+
 	 
-	 
-	Thread.sleep(3000);
+		Thread.sleep(3000);
 	
 	OnHomePage.	SelectCountry(inputdata.get("Country"));
   
 	OnHomePage.	SelectGender(inputdata.get("Gender"));
 	
 	OnHomePage.Click_LetsShop_Button();
-	
+	Thread.sleep(1500);
+	 
 	String actualtoasttext= OnHomePage.GetToastText();
-  
+	 
+ 
+ 
+	System.out.println("End");
 }
 	
 
@@ -130,7 +142,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 
 	 
 	  
-	 @Test(dataProvider = "getdata")
+// @Test(dataProvider = "getdata")
 	public void ValidateProductsPageToastText(HashMap<String,String> 	inputData) throws InterruptedException   
 
 	{
