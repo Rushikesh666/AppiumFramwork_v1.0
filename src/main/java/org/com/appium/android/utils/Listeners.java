@@ -45,10 +45,12 @@ public class Listeners     implements ITestListener {
 		 try {
 			driver = (AndroidDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			// TODO Auto-generated catch block
+ 
 			e.printStackTrace();
 		}
 		
+		 
+
 		
 		  try {
 			  test.addScreenCaptureFromPath(getScreenshotPath(result.getMethod().  getMethodName(),driver ),null );

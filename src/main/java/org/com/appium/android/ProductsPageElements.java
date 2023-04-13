@@ -1,5 +1,6 @@
 package org.com.appium.android;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.com.appium.android.utils.AndroidActions;
@@ -21,8 +22,18 @@ public 		class 		ProductsPageElements 		extends 		AndroidActions {
 			PageFactory.initElements(driver, this);
 	}
 	
-	
+	  
+	  @FindBy(id = "com.androidsample.generalstore:id/productName") 
+	  private
+	  List<WebElement> productName;
+	 
 
+	 
+
+
+	
+	
+	
 @FindBy(id="com.androidsample.generalstore:id/productAddCart")
 	List<WebElement> productAddCartbtn;
 
@@ -33,30 +44,36 @@ List<WebElement> productNameCount;
 @FindBy(id="com.androidsample.generalstore:id/appbar_btn_cart")
  WebElement  CartIcon;
 
- 
+private List <String> productFromProductPage=new ArrayList<>() ;
 
-	public void select_product( ) throws InterruptedException
+	public List<String> addProductToCart( ) throws InterruptedException
 	
 	{  Thread.sleep(2000);
 		int count = productNameCount.size();
-
+			System.out.println(count);
 
 		 for(int i=0;i<count;i++)
 			 
-		 { 
+		 { 	 System.out.println(productAddCartbtn.get(i).getText());
+			 
+			 productFromProductPage.add(productNameCount.get(i).getText()) ;
 				 productAddCartbtn.get(i).click();
+				 System.out.println(productNameCount.get(i).getText()+" is added to cart");
 				 Thread.sleep(2000);
+				 System.out.println(productFromProductPage+" :");
 		 }
+		return productFromProductPage;
+ 
 		
 		
 	}
-	public CartPageElements 		Click_Cart_Btn(AndroidDriver driver  )
+	public CartPageElements 		Click_Cart_Btn(AndroidDriver driver   )
 	{	 
 		CartIcon.click();
-		return new CartPageElements(driver); 
 	 
+	 return new CartPageElements(driver);
 		
 	}
-	 
-	
+
+ 
 }

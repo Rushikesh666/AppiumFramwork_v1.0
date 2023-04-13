@@ -19,6 +19,7 @@ import java.util.Set;
 import org.asynchttpclient.netty.channel.DefaultChannelPool.PoolLeaseStrategy;
 import org.com.appium.android.CartPageElements;
 import org.com.appium.android.HomePageElements;
+ 
 import org.com.appium.android.ProductsPageElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -55,7 +56,7 @@ public class HomePageTestCases extends Baseclass {
 
 	
  
- @Test(dataProvider = "getdata")
+
 public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) throws InterruptedException, IOException {
 	
 		System.out.println("Validate_Homepage_ToastText() running");
@@ -69,56 +70,64 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 	
 	OnHomePage.Click_LetsShop_Button();
 	Thread.sleep(1500);
-	 
+	String expectedToastText= "Please enter your name";
 	String actualtoasttext= OnHomePage.GetToastText();
-	 
+	 Assert.assertEquals(actualtoasttext, expectedToastText,"Actual Toast text matches with Expected Toast Text");
+ 
  
  
 	System.out.println("End");
 }
 	
 
- 
-	public void  EndtoEndHappyPathTest()   throws InterruptedException, IOException
+@Test(dataProvider = "getdata")
+	public void  EndtoEndHappyPathTest(HashMap<String,String> 	inputdata )   throws InterruptedException, IOException
 	{
 	    
  	HomePageElements OnHomePage  = new HomePageElements( super.driver);
 		
 		Thread.sleep(3000);
 		
-		OnHomePage.	SelectCountry("Algeria");
+ 
 	 
 		OnHomePage .InsertName("Rushi");
 	 
 
-		OnHomePage.	SelectGender("female");
+		OnHomePage.	SelectCountry(inputdata.get("Country"));
+		  
+		OnHomePage.	SelectGender(inputdata.get("Gender"));
 			
  
 		ProductsPageElements Products_Page=	OnHomePage. Click_LetsShop_Button();
  
-		Products_Page.select_product( );
-		 
-
- Thread.sleep(3000);
-
-
- 
- CartPageElements cartPage =   Products_Page .Click_Cart_Btn(driver    );
- 
-	
- Thread.sleep(2000);  
 	  
-   cartPage.getCartItemsTotal();
-	  
-	 
+ Thread.sleep(5000);
+
+  Products_Page.addProductToCart();
  
+ CartPageElements cartpage=  Products_Page .Click_Cart_Btn(  driver    );
+ 
+   Thread.sleep(4000); 
+ 
+   
+   Thread.sleep(4000); 
+   cartpage.getproductPrice_Items();
+   
+   
+   
+   
+   
+ 
+/*
  cartPage.Click_checkBox();
  Thread.sleep(5000);
  System.out.println("get ready");
 
 
-  	
-
+	 
+	 
+	 
+	 
  cartPage.LongPress_btnProceed(5);
  Thread.sleep(5000);
 	Set<String>erEs=	driver.getContextHandles();
@@ -138,52 +147,22 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
  Thread.sleep(2000);
  cartPage.navigateBack( );
  System.out.println("navigateBack2" );
+	 
+	 
+	 
+	 
+	 
+	 
+	 */
+ 
+ 
+  	
+
 	}
 
 	 
 	  
-// @Test(dataProvider = "getdata")
-	public void ValidateProductsPageToastText(HashMap<String,String> 	inputData) throws InterruptedException   
 
-	{
-
-			Thread.sleep(3000);
-		 
- 
-		
-		OnHomePage.	SelectCountry(inputData.get("Country"));
-	 
-		OnHomePage .	InsertName(inputData.get("Name"));
-	 
-
-		OnHomePage.	SelectGender(inputData.get("Gender"));
-			
- 
-		ProductsPageElements Products_Page=	OnHomePage. Click_LetsShop_Button();
-		Thread.sleep(3000);
-		Products_Page.Click_Cart_Btn(driver);
- 
-		Products_Page.select_product();
-		Thread.sleep(3000);
-		CartPageElements CartPage =	Products_Page.Click_Cart_Btn(driver);
-		Thread.sleep(3000);
-		CartPage.getCartItemsTotal();
- 
-		Set<String> mycontexthandles=	driver.getContextHandles();
-		
-		for (String handle : mycontexthandles) 
-		{
-			System.out.println(handle);
-		}
-		CartPage.submitOrder();
-		
-
-		
-		Thread.sleep(8000);
- 
-		 
- 
-		}
 	 
 	 
 @BeforeMethod

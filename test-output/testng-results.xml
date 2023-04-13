@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-10T18:28:49 IST" name="Suite" finished-at="2023-04-10T18:29:16 IST" duration-ms="27010">
+  <suite started-at="2023-04-13T21:00:02 IST" name="Default suite" finished-at="2023-04-13T21:00:47 IST" duration-ms="45219">
     <groups>
     </groups>
-    <test started-at="2023-04-10T18:28:49 IST" name="Test" finished-at="2023-04-10T18:29:16 IST" duration-ms="27010">
+    <test started-at="2023-04-13T21:00:02 IST" name="Default test" finished-at="2023-04-13T21:00:47 IST" duration-ms="45219">
       <class name="org.com.appium.HomePageTestCases">
-        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@1fc32e4f]" started-at="2023-04-10T18:28:49 IST" name="BasTestMethod" finished-at="2023-04-10T18:29:00 IST" duration-ms="11322" status="PASS">
+        <test-method is-config="true" signature="BasTestMethod()[pri:0, instance:org.com.appium.HomePageTestCases@201a4587]" started-at="2023-04-13T21:00:02 IST" name="BasTestMethod" finished-at="2023-04-13T21:00:12 IST" duration-ms="10257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasTestMethod -->
-        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@1fc32e4f]" started-at="2023-04-10T18:29:00 IST" name="loadSplashScreen" finished-at="2023-04-10T18:29:04 IST" duration-ms="3808" status="PASS">
+        <test-method is-config="true" signature="loadSplashScreen()[pri:0, instance:org.com.appium.HomePageTestCases@201a4587]" started-at="2023-04-13T21:00:13 IST" name="loadSplashScreen" finished-at="2023-04-13T21:00:16 IST" duration-ms="3718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadSplashScreen -->
-        <test-method signature="Validate_Homepage_ToastText(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@1fc32e4f]" started-at="2023-04-10T18:29:04 IST" name="Validate_Homepage_ToastText" data-provider="getdata" finished-at="2023-04-10T18:29:15 IST" duration-ms="11128" status="PASS">
+        <test-method signature="EndtoEndHappyPathTest(java.util.HashMap)[pri:0, instance:org.com.appium.HomePageTestCases@201a4587]" started-at="2023-04-13T21:00:16 IST" name="EndtoEndHappyPathTest" data-provider="getdata" finished-at="2023-04-13T21:00:47 IST" duration-ms="31047" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,8 +25,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validate_Homepage_ToastText -->
+        </test-method> <!-- EndtoEndHappyPathTest -->
       </class> <!-- org.com.appium.HomePageTestCases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
