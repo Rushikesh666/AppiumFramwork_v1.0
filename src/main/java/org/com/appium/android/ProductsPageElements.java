@@ -54,13 +54,13 @@ private List <String> productFromProductPage=new ArrayList<>() ;
 
 		 for(int i=0;i<count;i++)
 			 
-		 { 	 System.out.println(productAddCartbtn.get(i).getText());
+		 { 	  
 			 
 			 productFromProductPage.add(productNameCount.get(i).getText()) ;
 				 productAddCartbtn.get(i).click();
-				 System.out.println(productNameCount.get(i).getText()+" is added to cart");
+				 System.out.println(productNameCount.get(i).getText()+" is added to cart on produc page ");
 				 Thread.sleep(2000);
-				 System.out.println(productFromProductPage+" :");
+			 
 		 }
 		return productFromProductPage;
  

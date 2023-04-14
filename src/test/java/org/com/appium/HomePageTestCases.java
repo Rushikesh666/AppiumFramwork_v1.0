@@ -84,7 +84,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 	public void  EndtoEndHappyPathTest(HashMap<String,String> 	inputdata )   throws InterruptedException, IOException
 	{
 	    
- 	HomePageElements OnHomePage  = new HomePageElements( super.driver);
+ 	HomePageElements OnHomePage  = new HomePageElements( super.driver); 
 		
 		Thread.sleep(3000);
 		
@@ -103,7 +103,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 	  
  Thread.sleep(5000);
 
-  Products_Page.addProductToCart();
+  List <String >addProductToCart= Products_Page.addProductToCart();
  
  CartPageElements cartpage=  Products_Page .Click_Cart_Btn(  driver    );
  
@@ -111,7 +111,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
  
    
    Thread.sleep(4000); 
-   cartpage.getproductPrice_Items();
+   cartpage.getproductPrice_Items(addProductToCart  );
    
    
    

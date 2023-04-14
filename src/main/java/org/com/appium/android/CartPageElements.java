@@ -1,5 +1,6 @@
 package org.com.appium.android;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.com.appium.android.utils.AndroidActions;
@@ -24,10 +25,46 @@ public class CartPageElements extends 		AndroidActions {
 	  
 	  
 	  
-		public void getproductPrice_Items() {
+		public void getproductPrice_Items(List <String > AllproductsFromProductPAge) {
+			List <String > AllproductsList=new ArrayList<>();
+	
+			
+			
 
-			System.out.println(productName.get(0).getText());
-
+		 
+			
+			for(int i =0;	i<productName.size() 	; i++)
+				
+			{
+				AllproductsList.add(  productName.get(i).getText());
+				
+				
+				
+			}
+			
+			
+			
+		for(int i =0;	i<AllproductsFromProductPAge.size() 	; i++)
+				
+			{
+			 
+			for(int j =0;	j<AllproductsList.size() 	; j++)
+				
+			{
+		
+	 
+				if(AllproductsFromProductPAge.get(i).equals(AllproductsList.get(j)) )
+				{
+					System.out.println(" product  From Product PAge"+AllproductsFromProductPAge.get(i)+" Matches -->" +"product  From Cart PAge"+ AllproductsList.get(j));
+					
+				}
+				
+				
+			}
+			}
+			
+			
+			 
 		}
 	
 	
