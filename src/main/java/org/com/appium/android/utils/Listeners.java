@@ -22,14 +22,10 @@ public class Listeners     implements ITestListener {
 	 
  
 
-	AndroidDriver driver;
- 
- 
-
-
-
-	ExtentTest test;
-	ExtentReports Extent = ExtentReporterNG.getReporterObject();
+	private 	AndroidDriver driver;
+  
+	private ExtentTest test;
+	private ExtentReports Extent = ExtentReporterNG.getReporterObject();
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -81,15 +77,7 @@ public class Listeners     implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
  test.fail(result.getThrowable());
-  
- 
- 
- 
- 
- 
- 
- 
-	 
+   
 	}
 
 	

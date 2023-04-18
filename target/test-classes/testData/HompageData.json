@@ -9,15 +9,25 @@
 					
 					{
 					
-					"Name"	:	"Pooja",
+					"Name"	:	"RUSHI",
 					
 					"Gender"	:	"female",
 					
-					"Country"	: 	"Argentina"
-					 
-					}
-					 
+					"Country"	: 	"Argentina",
 					
+					 "ExpectedToastTextOnHomePage" :"Please enter your name"
+					}
+					 ,
+								{
+					
+					"Name"	:	"LULU",
+					
+					"Gender"	:	"female",
+					
+					"Country"	: 	"Argentina",
+					
+					 "ExpectedToastTextOnHomePage" :"Please enter your name"
+					}
 					
 					
 					
