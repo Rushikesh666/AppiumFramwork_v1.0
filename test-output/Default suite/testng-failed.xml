@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.com.appium.HomePageTestCases">
+      <class name="org.com.appium.ProductPageTestCases">
         <methods>
-          <include name="BasTestMethod"/>
-          <include name="EndtoEndHappyPathTest" invocation-numbers="0"/>
-          <include name="loadSplashScreen"/>
+          <include name="ValidateAddToCartFunctionality" invocation-numbers="0 1"/>
+          <include name="loadsSplashScreen"/>
+          <include name="BaseTestMethod"/>
         </methods>
-      </class> <!-- org.com.appium.HomePageTestCases -->
+      </class> <!-- org.com.appium.ProductPageTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
