@@ -51,36 +51,45 @@ import io.appium.java_client.android.StartsActivity;
 
 public class HomePageTestCases extends Baseclass {
 
-	
+	/*      HomePageTestCases Class contains all Homepage related  Test Cases only 	*/
 	
 
 	
  
-
-public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) throws InterruptedException, IOException {
-	
-		System.out.println("Validate_Homepage_ToastText() running");
-
-	 
+	@Test(dataProvider = "getdata")
+public void ValidateCorrectHomepageToastText	(HashMap<String,String> 	inputdata  ) throws InterruptedException, IOException {
 		Thread.sleep(3000);
+		System.out.println("Validate_Homepage_ToastText() running");
 	
-	OnHomePage.	SelectCountry(inputdata.get("Country"));
-  
-	OnHomePage.	SelectGender(inputdata.get("Gender"));
+		
+	//	OnHomePage.InsertName(inputdata.get("Name"));
+//		System.out.println("Entered Name successfully as :"+inputdata.get( "Name"));
 	
-	OnHomePage.Click_LetsShop_Button();
-	Thread.sleep(1500);
-	String expectedToastText= "Please enter your name";
-	String actualtoasttext= OnHomePage.GetToastText();
-	 Assert.assertEquals(actualtoasttext, expectedToastText,"Actual Toast text matches with Expected Toast Text");
+		
+	
+		OnHomePage.	SelectCountry(inputdata.get("Country"));
  
+			System.out.println("Entered Name successfully as :"+inputdata.get( "Country"));
+			
+			
+			OnHomePage.	SelectGender(inputdata.get("Gender"));
+			System.out.println("Entered Name successfully as :"+inputdata.get( "Gender"));
+			
+			
+			OnHomePage.Click_LetsShop_Button();
+			
+			Thread.sleep(1500);
+			String expectedToastText=  inputdata.get("ExpectedToastTextOnHomePage") ;
+			String actualToastText= OnHomePage.GetToastText();
+			 Assert.assertEquals(actualToastText, expectedToastText );
+			  
+				System.out.println(actualToastText+" is displayed as Actual Text");
  
- 
-	System.out.println("End");
+					System.out.println("Test Case Passed..! as ActualToasttext matches with ExpectedToastText	");
 }
 	
 
-@Test(dataProvider = "getdata")
+
 	public void  EndtoEndHappyPathTest(HashMap<String,String> 	inputdata )   throws InterruptedException, IOException
 	{
 	    
@@ -100,14 +109,14 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
  
 		ProductsPageElements Products_Page=	OnHomePage. Click_LetsShop_Button();
  
-	  
+		 
  Thread.sleep(5000);
 
   List <String >addProductToCart= Products_Page.addProductToCart();
  
- CartPageElements cartpage=  Products_Page .Click_Cart_Btn(  driver    );
+ CartPageElements cartpage=  Products_Page .Click_Cart_Btn(       );
  
-   Thread.sleep(4000); 
+ 
  
    
    Thread.sleep(4000); 
@@ -171,7 +180,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
  {
 		
 		Thread.sleep(3000);
-		System.out.println("Loading Splash Screen/Activity");
+			System.out.println("Loading Splash Screen/Activity");
 			Activity activity = new Activity("com.androidsample.generalstore","com.androidsample.generalstore.SplashActivity");
 			driver .startActivity(activity);
  
@@ -185,7 +194,7 @@ public void Validate_Homepage_ToastText(HashMap<String,String> 	inputdata  ) thr
 	  {  
 		  List<HashMap<String,String>>	data= getJsonData( FileSystems.getDefault().getPath("").toAbsolutePath()+ "//src//test//java//testData//HompageData.json"  );
 		
-		  return new Object [] [] { 	{	 data.get(0) }   } ; 
+		  return new Object [] [] { 	{	 data.get(0) }  ,{	 data.get(1) }  } ; 
 		  
 	  }
 

@@ -1,0 +1,33 @@
+[
+	
+	
+	{
+		"ExpectedProductPageTitle":"Products",
+			
+			"Name"	:	"RUSHI",
+					
+					"Gender"	:	"female",
+					
+					"Country"	: 	"Argentina"
+		
+	}
+	
+	
+	,
+	
+		{
+		"ExpectedProductPageTitle":"Products",
+			
+			"Name"	:	"ANkita",
+					
+					"Gender"	:	"female",
+					
+					"Country"	: 	"Argentina"
+		
+	}
+	
+	
+	
+	
+	
+]

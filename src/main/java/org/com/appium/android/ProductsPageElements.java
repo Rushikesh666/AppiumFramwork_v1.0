@@ -27,22 +27,21 @@ public 		class 		ProductsPageElements 		extends 		AndroidActions {
 	  private
 	  List<WebElement> productName;
 	 
-
-	 
-
+ 
+	  @FindBy(id="com.androidsample.generalstore:id/productAddCart")
+	  private	List<WebElement> productAddCartbtn;
 
 	
 	
-	
-@FindBy(id="com.androidsample.generalstore:id/productAddCart")
-	List<WebElement> productAddCartbtn;
+@FindBy(id="com.androidsample.generalstore:id/toolbar_title")
+private	WebElement  productPageTitle;
 
 
 @FindBy(id="com.androidsample.generalstore:id/productName")
-List<WebElement> productNameCount;
+private List<WebElement> productNameCount;
 	
 @FindBy(id="com.androidsample.generalstore:id/appbar_btn_cart")
- WebElement  CartIcon;
+private WebElement  CartIcon;
 
 private List <String> productFromProductPage=new ArrayList<>() ;
 
@@ -67,7 +66,7 @@ private List <String> productFromProductPage=new ArrayList<>() ;
 		
 		
 	}
-	public CartPageElements 		Click_Cart_Btn(AndroidDriver driver   )
+	public CartPageElements 		Click_Cart_Btn(   )
 	{	 
 		CartIcon.click();
 	 
@@ -75,5 +74,15 @@ private List <String> productFromProductPage=new ArrayList<>() ;
 		
 	}
 
+	
+	
+	
+	public String getProductPageTitle()
+	{
+		
+return	productPageTitle.getText();
+		
+		
+	}
  
 }

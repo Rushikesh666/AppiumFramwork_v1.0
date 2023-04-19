@@ -7,6 +7,7 @@ import org.com.appium.android.utils.AndroidActions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -68,7 +69,28 @@ public class CartPageElements extends 		AndroidActions {
 		}
 	
 	
-	
+	public void m1()
+	{
+		
+		
+		
+		
+		System.out.println("Validate_Homepage_ToastText() running");
+ 
+ 
+ 
+ 
+ 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
 	
