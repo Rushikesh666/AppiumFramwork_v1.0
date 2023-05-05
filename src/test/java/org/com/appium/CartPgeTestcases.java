@@ -4,6 +4,10 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.android.Activity;
 
 public class CartPgeTestcases {
 	
@@ -19,18 +23,19 @@ public class CartPgeTestcases {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
 	*/
 	
 
-	
-	
+	 
+@Test
+	public void testabc() throws InterruptedException
+
+{
+		
+	 
+
+
+}
 	
 	
 }
