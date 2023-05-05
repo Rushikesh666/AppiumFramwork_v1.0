@@ -1,16 +1,14 @@
 # Used tools: for automating general store mobile demo app
 
-![AppImage](./APP-IMAGES/img1.jpg)	![AppImage](./img2.jpg)
+![AppImage](./APP-IMAGES/img1.jpg)	![AppImage](.APP-IMAGES/img2.jpg)
 
-![AppImage](./img3.jpg)
+![AppImage](.APP-IMAGES/img3.jpg) ![AppImage](.APP-IMAGES/img4.jpg)
 
-![AppImage](./img4.jpg)
+![AppImage](.APP-IMAGES/img5.jpg) ![AppImage](.APP-IMAGES/img6.jpg)
 
-![AppImage](./img5.jpg)
+![AppImage](.APP-IMAGES/img7.jpg)
 
-![AppImage](./img6.jpg)
 
-![AppImage](./img7.jpg)
 
 - Framework  used : ***APPIUM, TestNG***
 - Design pattern used : ***Page Object Model***
