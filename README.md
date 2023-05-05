@@ -1,4 +1,4 @@
-# Used tools: 
+# Used tools: for automating general store mobile demo app
 
 ![AppImage](./MobileAppFlow.gif)
 - Framework  used : APPIUM, TestNG
@@ -23,7 +23,7 @@ Some basic Git commands are:
 - git pull
 - git stash
 
-*** Operation automated on mobile app  *** 
+***Operation automated on mobile app*** 
 - Selecting multiple  elements from the page.
 - Scrolling dropdown till value expected visible
 - Select or Touch specified Element from dropdown 
