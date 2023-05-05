@@ -1,6 +1,17 @@
 # Used tools: for automating general store mobile demo app
 
-![AppImage](./MobileAppFlow.gif)
+![AppImage](./img1.png)	![AppImage](./img2.png)
+
+![AppImage](./img3.png)
+
+![AppImage](./img4.png)
+
+![AppImage](./img5.png)
+
+![AppImage](./img6.png)
+
+![AppImage](./img7.png)
+
 - Framework  used : ***APPIUM, TestNG***
 - Design pattern used : ***Page Object Model***
 - Automation server used:***Jenkins***
@@ -39,3 +50,7 @@
 - git push
 - git pull
 - git stash
+
+
+
+![AppImage](./MobileAppFlow.gif)
