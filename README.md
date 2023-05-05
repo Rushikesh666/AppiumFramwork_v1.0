@@ -14,10 +14,11 @@
 - Selecting multiple  elements from the page.
 - Scrolling dropdown till value expected visible
 - Select or Touch specified Element from dropdown 
-- SElecting radio box
+- Selecting radio box button.
 - Entering values under edittext field.
 - Entering values under edittext field.
-
+- Selecting multiple  elements from the page.
+- Hiding opened mobile keyboard.
 
 - ***Demo application can be found under directory*** :\src\test\java\res\ApiDemos-debug.apk
 
