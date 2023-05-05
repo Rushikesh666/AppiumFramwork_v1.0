@@ -1,6 +1,6 @@
 # Used tools: for automating general store mobile demo app
 
-![AppImage](./img1.jpg)	![AppImage](./img2.jpg)
+![AppImage](./APP-IMAGES/img1.jpg)	![AppImage](./img2.jpg)
 
 ![AppImage](./img3.jpg)
 
