@@ -1,12 +1,15 @@
 # Used tools: for automating general store mobile demo app
 
-![AppImage](./APP-IMAGES/img1.jpg)	![AppImage](.APP-IMAGES/img2.jpg)
+1.  ![AppImage](./APP-IMAGES/img1.jpg)	
+2.  ![AppImage](.APP-IMAGES/img2.jpg)
 
-![AppImage](.APP-IMAGES/img3.jpg) ![AppImage](.APP-IMAGES/img4.jpg)
+3. ![AppImage](.APP-IMAGES/img3.jpg) 
+4. ![AppImage](.APP-IMAGES/img4.jpg)
 
-![AppImage](.APP-IMAGES/img5.jpg) ![AppImage](.APP-IMAGES/img6.jpg)
+5. ![AppImage](.APP-IMAGES/img5.jpg) 
+6. ![AppImage](.APP-IMAGES/img6.jpg)
 
-![AppImage](.APP-IMAGES/img7.jpg)
+7. ![AppImage](.APP-IMAGES/img7.jpg)
 
 
 
